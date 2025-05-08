@@ -18,7 +18,7 @@ const Projects = () => {
       id: 1,
       title: 'Tela Login',
       description: 'Tela de login com opção de cadastro, desenvolvida com HTML e CSS para estrutura e estilização, e JavaScript para simular a lógica de back-end, validando credenciais e armazenando dados localmente.',
-      image: '/img/public/proj-login.png',
+      image: '/img/proj-login.png',
       tags: ['HTML', 'CSS', 'Javascript', 'MySQL'],
       category: 'web', 
       github: 'https://github.com/GustavoSousaa/Projeto-Login',

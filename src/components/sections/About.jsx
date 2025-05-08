@@ -58,6 +58,7 @@ const About = () => {
           <h2 className="mb-4">Sobre Mim</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8 rounded-full"></div>
           <p className="max-w-3xl mx-auto text-lg text-secondary-700 dark:text-secondary-300">
+            Meu nome é Gustavo Teixeira, tenho 22 anos
             Sou um desenvolvedor front-end e designer apaixonado por criar experiências digitais
             únicas e memoráveis, combinando código limpo com design intuitivo.
           </p>
@@ -73,7 +74,7 @@ const About = () => {
             <h3 className="text-2xl mb-6">Minha História</h3>
             <div className="space-y-4 text-secondary-700 dark:text-secondary-300">
               <p>
-                Com mais de 1 ano de experiência em desenvolvimento front-end e design de interfaces,
+                Com vasta experiência em desenvolvimento front-end e design de interfaces,
                 tenho trabalhado em diversos projetos desafiadores que me permitiram aperfeiçoar minhas
                 habilidades e desenvolver um olhar crítico para detalhes.
               </p>

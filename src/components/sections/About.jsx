@@ -58,7 +58,7 @@ const About = () => {
           <h2 className="mb-4">Sobre Mim</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8 rounded-full"></div>
           <p className="max-w-3xl mx-auto text-lg text-secondary-700 dark:text-secondary-300">
-            Meu nome é Gustavo Teixeira, tenho 22 anos
+            Meu nome é Gustavo Teixeira, tenho 22 anos,
             Sou um desenvolvedor front-end e designer apaixonado por criar experiências digitais
             únicas e memoráveis, combinando código limpo com design intuitivo.
           </p>

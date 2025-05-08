@@ -190,14 +190,7 @@ const Projects = () => {
                   >
                     <FiGithub className="mr-2" /> Source
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-secondary-700 dark:text-secondary-300 hover:text-primary-500 dark:hover:text-primary-400"
-                  >
-                    <FiExternalLink className="mr-2" /> Live Demo
-                  </a>
+                  
                 </div>
               </div>
             </motion.div>

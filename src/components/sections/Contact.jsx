@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiSend, FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
 import { useInView } from 'react-intersection-observer'
-import emailjs from 'emailjs-com '
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [ref, inView] = useInView({

@@ -34,15 +34,15 @@ const Contact = () => {
   setIsSubmitting(true)
 
   emailjs.send(
-    'service_wg4h49e', // Substitua pelo seu Service ID
-    'template_2vkajaf', // Substitua pelo seu Template ID
+    'service_wg4h49e', // Seu Service ID
+    'template_2vkajaf', // Seu Template ID
     {
       from_name: formData.name,
       from_email: formData.email,
       subject: formData.subject,
       message: formData.message,
     },
-    'bZm9AQeNN55tftQjV' // Substitua pelo seu Public Key
+    'bZm9AQeNN55tftQjV' // Seu Public Key
   )
   .then(() => {
     setIsSubmitting(false)
@@ -56,16 +56,6 @@ const Contact = () => {
     setTimeout(() => setFormStatus(null), 5000)
   })
 
-  {formStatus === 'error' && (
-  <motion.div 
-    className="mb-6 p-4 bg-red-50 text-red-500 rounded-md"
-    initial={{ opacity: 0, height: 0 }}
-    animate={{ opacity: 1, height: 'auto' }}
-    transition={{ duration: 0.3 }}
-  >
-    Ocorreu um erro ao enviar sua mensagem. Tente novamente.
-  </motion.div>
-)}
     
     // Simulate form submission
     setTimeout(() => {

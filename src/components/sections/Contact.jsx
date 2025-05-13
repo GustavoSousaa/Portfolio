@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiSend, FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
 import { useInView } from 'react-intersection-observer'
+import emailjs from 'emailjs-com '
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -28,8 +29,42 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  setIsSubmitting(true)
+
+  emailjs.send(
+    'service_wg4h49e', // Substitua pelo seu Service ID
+    'template_2vkajaf', // Substitua pelo seu Template ID
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    },
+    'SEU_PUBLIC_KEY' // Substitua pelo seu Public Key
+  )
+  .then(() => {
+    setIsSubmitting(false)
+    setFormStatus('success')
+    setFormData({ name: '', email: '', subject: '', message: '' })
+    setTimeout(() => setFormStatus(null), 5000)
+  })
+  .catch(() => {
+    setIsSubmitting(false)
+    setFormStatus('error')
+    setTimeout(() => setFormStatus(null), 5000)
+  })
+
+  {formStatus === 'error' && (
+  <motion.div 
+    className="mb-6 p-4 bg-red-50 text-red-500 rounded-md"
+    initial={{ opacity: 0, height: 0 }}
+    animate={{ opacity: 1, height: 'auto' }}
+    transition={{ duration: 0.3 }}
+  >
+    Ocorreu um erro ao enviar sua mensagem. Tente novamente.
+  </motion.div>
+)}
     
     // Simulate form submission
     setTimeout(() => {

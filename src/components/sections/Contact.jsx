@@ -41,7 +41,7 @@ const Contact = () => {
       subject: formData.subject,
       message: formData.message,
     },
-    'SEU_PUBLIC_KEY' // Substitua pelo seu Public Key
+    'bZm9AQeNN55tftQjV' // Substitua pelo seu Public Key
   )
   .then(() => {
     setIsSubmitting(false)

@@ -11,7 +11,7 @@ const About = () => {
 
   const skills = [
     {
-      category: 'Desenvolvimento Front-end',
+      category: 'Stacks',
       icon: <FiCode className="w-6 h-6 text-primary-500" />,
       items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind CSS', 'SASS']
     },

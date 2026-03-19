@@ -82,14 +82,14 @@ const Contact = () => {
     {
       icon: <FiMail className="w-6 h-6 text-primary-500" />,
       title: 'Email',
-      content: 'contact@example.com',
-      link: 'mailto:contact@example.com'
+      content: 'gustavosousa4@outlook.com.br',
+      link: 'mailto:gustavosousa4@outlook.com.br'
     },
     {
       icon: <FiPhone className="w-6 h-6 text-primary-500" />,
       title: 'Phone',
-      content: '+55 (123) 456-7890',
-      link: 'tel:'
+      content: '+55 (71)99698-0948',
+      link: 'tel:+5571996980948'
     },
     {
       icon: <FiMapPin className="w-6 h-6 text-primary-500" />,

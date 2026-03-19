@@ -14,7 +14,7 @@ const Home = () => {
             className="relative z-10"
           >
             <span className="inline-block text-primary-500 font-medium mb-4 tracking-wider">
-              DESENVOLVEDOR FRONT-END 
+              DESENVOLVEDOR FRONT-END/QA
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Transformando ideias em

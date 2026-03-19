@@ -88,7 +88,7 @@ const Contact = () => {
     {
       icon: <FiPhone className="w-6 h-6 text-primary-500" />,
       title: 'Telefone',
-      content: '+55 (71)99698-0948',
+      content: '+55 (71) 99698-0948',
       link: 'tel:+5571996980948'
     },
     {
